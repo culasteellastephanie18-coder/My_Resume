@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #491245; /* Matches your highlight color */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.about-description p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.personal-info {
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 0;
+}
+
+.personal-info li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.personal-info strong {
+    color: #1a1a1a;
+    width: 100px;
+    display: inline-block;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1a071b;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Keeps everything centered horizontally */
+    justify-content: top; /* THIS moves everything to the vertical center */
+    padding: 20px 0;        /* Removes the large padding-top from before */
+}
+
+/* Ensure your header has some breathing room */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add this new block below sidebar */
+.sidebar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #6a286b;
+    object-fit: cover;
+    margin-bottom: 0px;   /* Space between photo and the first button */
+}
+.profile-name {
+    color: #d379c9;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px; /* Space between photo and name */
+    margin-bottom: 20px; /* Space between name and the first button */
+}
+
+/* Keep the rest of your nav-links and other styles as they are */
+.nav-links a {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-align: center; /* Ensures text is centered in the sidebar */
+}
+
+.nav-links a:hover {
+    color: #fff; /* Pseudo-class Requirement */
+}
+
+/* Main Content Area */
+.content {
+    margin-left: 250px;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.resume-section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee; /* Box Model Requirement */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Form Styling */
+#contactForm input, #contactForm textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* CSS for Feature 2: Dark Mode */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .content {
+    background-color: #121212;
+}
+
+.dark-mode .resume-section {
+    border-bottom: 1px solid #333;
+}
